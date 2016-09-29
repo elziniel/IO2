@@ -1,0 +1,41 @@
+Page index.php :
+
+Nous avons voulu utiliser les fonctions include pour permettre à l'utilisateur de ne charger qu'une seule page, allégeant ainsi les temps de chargement.
+La page est organisée en trois colonnes : le menu de gauche et les images défilantes à droite sont fixés, tout comme la barre du haut. La page principale est au centre.
+Ainsi, la fonction alea, les informations de connexion à la base de données et le formulaire caché peut être stocké sur cette même page sans avoir besoin de les réécrire sur toutes les autres page.
+
+Page d'inscription :
+
+Inspiré de certains sites, le peu d'information demandé lors de l'inscription facilite la démarche à l'utilisateur, lui permettant par la suite de compléter, s'il le souhaite, les informations supplémentaires.
+
+Page de paramètres :
+
+L'utilisateur peut à la fois modifier ses informations, mais aussi ajouter un avatar à son profil pour plus de personnalisation.
+Il lui est aussi permis de modifier son mot de passe initialement généré aléatoirement pour plus de confort lors de la connexion.
+
+Page articles, événements et réunion :
+
+Le système est le même pour les trois pages hormis quelques exceptions :
+	- L'utilisateur doit être connecter pour pouvoir poster.
+		- Sur la page Réunion, il doit être administrateur ou modérateur.
+	- L'utilisateur peut modifier ou supprimer sa propre soumission.
+		- les personnes haut-gradées peuvent faire de même pour toutes les soumissions.
+			- Sur la page Réunion, seule la suppression est autorisé, sur sa propre soumission, quelque soit le grade.
+	- Le nom du créateur de la soumission est tout le temps visible (avec date et heure de création). Celui qui a modifié la soumission en dernier s'affiche en dessous (avec date et heure de modification).
+
+Page de l'organigramme :
+
+Les utilisateurs sont affichés par ordre de compétence. Un lien mène vers leur profil public.
+
+Page de l'utilisateur :
+
+Reprend le même principe de la page de paramètres sans la possibilité de modifier les informations. (profil public)
+
+Sources :
+
+Les images défilantes sont tirées du site http://terresacree.org/
+Le texte de la page d'accueil est tiré d'un article du monde (http://www.lemonde.fr/mmpub/edt/doc/20101028/1432327_9d4e_changement_climatique__octobre_2010.pdf)
+Le texte de la page des objectifs est tiré du site http://www.rac-f.org/Associations-membres (association Objectif Climat)
+La source des textes de la page des articles sont cités dans les articles eux-mêmes.
+
+Tous les codes ont été réalisés par nos soins. Les fonctions header, mysql_num_rows ainsi que le style overflow ont fait l'objet de recherches sur internet.
